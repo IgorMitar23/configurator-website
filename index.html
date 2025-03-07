@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="konfigurator.css" type="text/css" />
+    <script type="text/javascript" src="konfigurator.js"></script>
+    <title>Konfigurator</title>
+  </head>
+  <body>
+    <div id="prvislajd">
+      <section id="naslov">
+        <h3 id="imefirme">BuildMaster kompanija predstavlja</h3>
+        <h1 id="imeappa">KONFIGURATOR</h1>
+        <p id="moto">- vi birate, mi pravimo -</p>
+      </section>
+      <p id="zapocni">Sponzori:</p>
+      <section id="slike">
+        <img class="super" src="asus.png" alt="" width="250" height="250" />
+        <img class="super" src="gigabyte.png" alt="" width="250" height="250" />
+        <img class="super" src="nvidia.png" alt="" width="250" height="250" />
+        <img
+          class="super kingston"
+          src="kingston.png"
+          alt=""
+          width="250"
+          height="250"
+        />
+      </section>
+      <a id="strelica-1" href="#drugislajd">
+        <div id="strelica">></div>
+      </a>
+    </div>
+    <div id="drugislajd">
+      <section id="prva-sekcija">
+        <h3 id="za-budzet">Izaberite vas budžet</h3>
+        <select onchange="promeniVrednost()" name="budzet-za-komp" id="budzet">
+          <option value=""></option>
+          <option value="1000">1000€</option>
+          <option value="1500">1500€</option>
+          <option value="2000">2000€</option>
+          <option value="2500">2500€</option>
+          <option value="3000+">3000€+</option>
+        </select>
+      </section>
+      <section id="druga-sekcija">
+        <h3 id="za-cipset">Izaberite čipset računara</h3>
+        <div id="radio-batoni">
+          <label for="intel"
+            ><input
+              onchange="promeniVrednost2()"
+              value="intelcpu"
+              type="radio"
+              name="isti"
+              id="intel"
+            />Intel</label
+          >
+          <label for="amd"
+            ><input
+              onchange="promeniVrednost2()"
+              value="amdcpu"
+              type="radio"
+              name="isti"
+              id="amd"
+            />AMD</label
+          >
+        </div>
+      </section>
+      <a id="strelica-2" onclick="return checkSelection()" href="#trecislajd">
+        <div id="strelica2">></div>
+      </a>
+      <a id="strelica-3" href="#prvislajd">
+        <div id="strelica2"><</div>
+      </a>
+    </div>
+    <div id="trecislajd">
+      <div id="slike-konfiga">
+        <img src="komp1.png" alt="" id="slika1" />
+        <img src="komp2.png" alt="" id="slika2" />
+        <img src="komp3.png" alt="" id="slika3" />
+        <img src="komp4.png" alt="" id="slika4" />
+        <img src="komp5.png" alt="" id="slika5" />
+      </div>
+      <section id="komponente">
+        <div id="procesor">
+          <img src="cpu.png" alt="" id="procesorslika" height="70" width="70" />
+          <div id="procesor-ime">
+            <p id="intelcpu">
+              <a
+                class="srediti"
+                id="srediti"
+                href="https://ark.intel.com/content/www/us/en/ark/products/230501/intel-core-i5-13400f-processor-20m-cache-up-to-4-60-ghz.html"
+                target="_blank"
+                >INTEL Core i5-13400F</a
+              >
+            </p>
+            <p id="amdcpu">
+              <a
+                class="srediti"
+                href="https://www.amd.com/en/products/apu/amd-ryzen-7-5700g"
+                target="_blank"
+                >AMD Ryzen 7 5700G</a
+              >
+            </p>
+          </div>
+        </div>
+        <div id="graficka">
+          <img
+            src="graphic-card.png"
+            alt=""
+            id="grafickaslika"
+            height="70"
+            width="70"
+          />
+          <div id="graficka-ime">
+            <p id="graficka-1">
+              <a
+                class="srediti"
+                href="https://www.asus.com/motherboards-components/graphics-cards/dual/dual-gtx1650-o4g/"
+                target="_blank"
+                >ASUS GTX 1650</a
+              >
+            </p>
+            <p id="graficka-2">
+              <a
+                class="srediti"
+                href="https://www.asus.com/motherboards-components/graphics-cards/dual/dual-rx7600-o8g/"
+                target="_blank"
+                >ASUS Radeon RX 7600 V2 OC</a
+              >
+            </p>
+            <p id="graficka-3">
+              <a
+                class="srediti"
+                href="https://www.asus.com/motherboards-components/graphics-cards/dual/dual-rtx4060-o8g/"
+                target="_blank"
+                >ASUS RTX 4060 OC</a
+              >
+            </p>
+            <p id="graficka-4">
+              <a
+                class="srediti"
+                href="https://www.asus.com/motherboards-components/graphics-cards/tuf-gaming/tuf-rx7800xt-o16g-gaming/"
+                target="_blank"
+                >GIGABYTE RX 7800XT</a
+              >
+            </p>
+            <p id="graficka-5">
+              <a
+                class="srediti"
+                href="https://rog.asus.com/graphics-cards/graphics-cards/rog-strix/rog-strix-rtx4080-o16g-gaming-model/"
+                target="_blank"
+                >GIGABYTE RTX 4080 OC</a
+              >
+            </p>
+          </div>
+        </div>
+        <div id="memorija">
+          <img src="ram.png" alt="" id="memorijaslika" height="70" width="70" />
+          <div id="memorija-ime">
+            <p id="memorija-1">
+              <a
+                href="https://gigatron.rs/memorije/kingston-beast-8gb-ddr4-3200mhz-cl16-kf432c16bb8-424198"
+                target="_blank"
+                class="srediti"
+                >KINGSTON Beast 8Gb 3200Mhz</a
+              >
+            </p>
+            <p id="memorija-2">
+              <a
+                href="https://www.eponuda.com/ram-memorija-za-racunare-cene/kingston-ddr4-8gb-3200mhz-kf432c16rb-8-fury-renegade-black-ram-memorija-cena-758863"
+                target="_blank"
+                class="srediti"
+                >KINGSTON Renegade RGB 8GB 3200Mhz</a
+              >
+            </p>
+            <p id="memorija-3">
+              <a
+                href="https://www.eponuda.com/ram-memorija-za-racunare-cene/kingston-ddr4-16gb-3200mhz-kf432c16rb1a-16-fury-renegade-rgb-ram-memorija-cena-758820"
+                target="_blank"
+                class="srediti"
+                >KINGSTON Fury renegade 16GB 3200Mhz</a
+              >
+            </p>
+            <p id="memorija-4">
+              <a
+                href="https://www.eponuda.com/ram-memorija-za-racunare-cene/kingston-ddr4-32gb-3200mhz-kf432c16rb-32-fury-renegade-black-ram-memorija-cena-758849"
+                target="_blank"
+                class="srediti"
+                >KINGSTON Fury renegade 32GB 3200Mh</a
+              >
+            </p>
+            <p id="memorija-5">
+              <a
+                href="https://gigatron.rs/memorije/kingston-beast-32gb-ddr4-3600mhz-cl18-kf436c18bb32-424219"
+                target="_blank"
+                class="srediti"
+                >KINGSTON Beast 32GB 3600Mhz</a
+              >
+            </p>
+          </div>
+        </div>
+        <div id="napajanje">
+          <img
+            src="supply.png"
+            alt=""
+            id="napajanjeslika"
+            height="70"
+            width="70"
+          />
+          <div id="napajanje-ime">
+            <p id="napajanje-1">
+              <a
+                href="https://www.gigabyte.com/Power-Supply/GP-P550B"
+                target="_blank"
+                class="srediti"
+                >GIGABYTE GP-P550B 550W</a
+              >
+            </p>
+            <p id="napajanje-2">
+              <a
+                href="https://www.gigabyte.com/rs/Power-Supply/GP-P750GM"
+                target="_blank"
+                class="srediti"
+                >GIGABYTE GP-P750GM 750W</a
+              >
+            </p>
+            <p id="napajanje-3">
+              <a
+                href="https://www.gigabyte.com/Power-Supply/P850GM#kf"
+                target="_blank"
+                class="srediti"
+                >GIGABYTE UP850GM 850W</a
+              >
+            </p>
+            <p id="napajanje-4">
+              <a
+                href="https://www.gigabyte.com/Power-Supply/GP-UD1000GM#kf"
+                target="_blank"
+                class="srediti"
+                >GIGABYTE UD1000GM 1000W</a
+              >
+            </p>
+            <p id="napajanje-5">
+              <a
+                href="https://www.asus.com/motherboards-components/power-supply-units/tuf-gaming/tuf-gaming-1200g/"
+                target="_blank"
+                class="srediti"
+                >ASUS TUF GAMING 1200W</a
+              >
+            </p>
+          </div>
+        </div>
+        <div id="kuciste">
+          <img
+            src="tower.png"
+            alt=""
+            id="kucisteslika"
+            height="70"
+            width="70"
+          />
+          <div id="kuciste-ime">
+            <p id="kuciste-1">
+              <a
+                href="https://www.asus.com/motherboards-components/cases/asus/asus-a21-case/"
+                target="_blank"
+                class="srediti"
+                >ASUS A21</a
+              >
+            </p>
+            <p id="kuciste-2">
+              <a
+                href="https://www.asus.com/motherboards-components/cases/tuf-gaming/tuf-gaming-gt301/"
+                target="_blank"
+                class="srediti"
+                >ASUS TUF GAMING GT301</a
+              >
+            </p>
+            <p id="kuciste-3">
+              <a
+                href="https://www.asus.com/motherboards-components/cases/tuf-gaming/tuf-gaming-gt501/"
+                target="_blank"
+                class="srediti"
+                >ASUS TUF GAMING GT501</a
+              >
+            </p>
+            <p id="kuciste-4">
+              <a
+                href="https://www.gigabyte.com/PC-Case/GB-AC300G#kf"
+                target="_blank"
+                class="srediti"
+                >GIGABYTE AORUS C300</a
+              >
+            </p>
+            <p id="kuciste-5">
+              <a
+                href="https://rog.asus.com/cases/rog-hyperion-gr701-model/"
+                target="_blank"
+                class="srediti"
+                >ASUS ROG Hyperion GR701</a
+              >
+            </p>
+          </div>
+        </div>
+        <div id="maticna">
+          <img
+            src="motherboard.png"
+            alt=""
+            id="maticnaslika"
+            height="70"
+            width="70"
+          />
+          <div id="maticna-ime">
+            <p id="maticna-1">
+              <a
+                href="https://www.asus.com/motherboards-components/motherboards/prime/prime-b450m-a/"
+                target="_blank"
+                class="srediti"
+                >ASUS PRIME B450M</a
+              >
+            </p>
+            <p id="maticna-2">
+              <a
+                href="https://www.gigabyte.com/Motherboard/B760M-DS3H-DDR4-rev-10"
+                target="_blank"
+                class="srediti"
+                >GIGABYTE B760M DS3H</a
+              >
+            </p>
+            <p id="maticna-3">
+              <a
+                href="https://www.asus.com/motherboards-components/motherboards/prime/prime-b650m-a-ii/"
+                target="_blank"
+                class="srediti"
+                >ASUS PRIME B650M-A II</a
+              >
+            </p>
+            <p id="maticna-4">
+              <a
+                href="https://www.gigabyte.com/Motherboard/B660-AORUS-MASTER-rev-1x"
+                target="_blank"
+                class="srediti"
+                >GIGABYTE B660 AORUS</a
+              >
+            </p>
+            <p id="maticna-5">
+              <a
+                href="https://rog.asus.com/motherboards/rog-strix/rog-strix-x670e-a-gaming-wifi-model/"
+                target="_blank"
+                class="srediti"
+                >ASUS ROG STRIX X670E-A</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <a id="strelica-4" href="#drugislajd">
+        <div id="strelica4"><</div>
+      </a>
+      <a id="strelica-5" href="#cetvrtislajd">
+        <div id="strelica2">></div>
+      </a>
+    </div>
+    <div id="cetvrtislajd">
+      <a id="strelica-6" href="#trecislajd">
+        <div id="strelica4"><</div>
+      </a>
+      <div id="opis-kompa">
+        <p id="opis-1">
+          Ovaj računar je pogodan za povremeno igranje, konzumiranje
+          multimedijalnog sadržaja i lakše produktivne zadatke. Može da izdrži
+          popularne naslove na 1080p rezoluciji sa srednjim do visokim
+          podešavanjima. Takođe je sposoban za osnovno uređivanje fotografija i
+          videa, pretraživanje interneta i kancelarijski rad.
+        </p>
+        <p id="opis-2">
+          Sa jačim procesorom i grafičkom karticom, ovaj računar je odličan za
+          igranje na višim rezolucijama (1440p) i frekvencijama slika. Može da
+          pokrene zahtevne igre glatko na visokim podešavanjima i pogodan je za
+          strimovanje igara ili kreiranje sadržaja. Takođe je sposoban da se
+          nosi sa zadacima kao što su video uređivanje, 3D modelovanje i
+          multitasking sa lakoćom.
+        </p>
+        <p id="opis-3">
+          Ovaj računar je visokoperformantan uređaj namenjen ozbiljnim igračima
+          i kreatorima sadržaja. Može da izdrži igranje na 4K rezoluciji sa
+          visokim frekvencijama slika i maksimalnim grafičkim podešavanjima.
+          Takođe je opremljen zahtevnim zadacima poput 3D modelovanja,
+          renderovanja i simulacija. Brzo skladištenje i obilna RAM memorija
+          čine ga idealnim za multitasking i rad sa velikim datotekama.
+        </p>
+        <p id="opis-4">
+          Računar namenjen entuzijastima, izgrađen za ultra-glatko igranje na 4K
+          rezoluciji i maksimalnim detaljima. Takođe je pogodan za igranje na
+          visokim osvežavanjima slika na 1440p ili čak 1080p. Osim igranja,
+          odlično se snalazi i u zadacima kreiranja sadržaja poput video
+          uređivanja, strimovanja i animacije zahvaljujući snažnom procesoru,
+          grafičkoj kartici i obilnoj RAM memoriji. Prilagođeno vodeno hlađenje
+          osigurava tiho funkcionisanje čak i pod teškim opterećenjima.
+        </p>
+        <p id="opis-5">
+          Ovaj računar predstavlja vrhunac performansi, namenjen hardcore
+          igračima, profesionalnim kreatorima sadržaja i entuzijastima koji
+          zahtevaju najbolje. Može da podnese igranje na 4K rezoluciji sa
+          uključenim ray tracingom i sposoban je za postizanje visokih
+          frekvencija slika u VR i ultra-širokim postavkama. Njegova ogromna
+          obrada podataka i obilna RAM memorija čine ga pogodnim za kompleksne
+          simulacije, naučno računanje i profesionalnu produkciju
+          multimedijalnog sadržaja. Prilagođeni sistem vodenog hlađenja
+          osigurava optimalnu termalnu efikasnost za produženu upotrebu.
+        </p>
+      </div>
+      <form id="myForm" onsubmit="return checkForm()">
+        <fieldset>
+          <legend id="legenda">Pošaljite zahtev</legend>
+          <input type="text" placeholder="Ime" />
+          <input type="text" placeholder="Prezime" />
+          <input type="email" placeholder="E-mail" />
+          <input type="tel" placeholder="Telefon" />
+          <input type="submit" value="POŠALJI" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: Nunito, sans-serif;
+}
+/* BASIC RESET */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+/* BASIC RESET */
+body {
+  height: 100vh;
+  width: 400vw;
+  overflow-y: hidden;
+  background-color: #6e6e6e;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.super {
+  max-width: 100%;
+  height: auto;
+}
+#prvislajd,
+#drugislajd,
+#trecislajd,
+#cetvrtislajd {
+  width: 100vw;
+  height: 100%;
+}
+#prvislajd {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+#naslov {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 500px;
+}
+#slike {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 1100px;
+  position: relative;
+  bottom: 60px;
+}
+.kingston {
+  position: relative;
+  top: 15px;
+}
+#imefirme {
+  font-size: 30px;
+  margin: 5px;
+}
+#imeappa {
+  font-size: 80px;
+  background-color: #baff39;
+  color: #6e6e6e;
+  border-radius: 10px;
+  width: 700px;
+  text-align: center;
+  margin: 5px;
+}
+#moto {
+  font-size: 30px;
+  margin: 5px;
+}
+#zapocni {
+  font-size: 30px;
+  margin: 5px;
+}
+#strelica-1,
+#strelica-2,
+#strelica-5 {
+  width: 60px;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #baff39;
+  color: #6e6e6e;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#strelica,
+#strelica2,
+#strelica3,
+#strelica4 {
+  font-size: 50px;
+}
+#drugislajd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#strelica-3,
+#strelica-4,
+#strelica-6 {
+  width: 60px;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #baff39;
+  color: #6e6e6e;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#prva-sekcija,
+#druga-sekcija {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#za-budzet,
+#za-cipset {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 45px;
+}
+#budzet {
+  color: #6e6e6e;
+  background-color: #baff39;
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  border: 2px solid black;
+}
+label {
+  font-size: 30px;
+  color: #fff;
+}
+#amd,
+#intel {
+  cursor: pointer;
+  height: 22px;
+  width: 22px;
+  background-color: #baff39;
+  accent-color: #6e6e6e;
+  margin-right: 12px;
+}
+#radio-batoni {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#trecislajd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+#slike-konfiga {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+#slika1,
+#slika2,
+#slika3,
+#slika4,
+#slika5 {
+  width: 500px;
+  height: 500px;
+  border: 5px solid #baff39;
+  padding: 8px;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#komponente {
+  border: 5px solid #baff39;
+  border-radius: 20px;
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+}
+#procesor,
+#graficka,
+#memorija,
+#napajanje,
+#kuciste,
+#maticna {
+  height: 100px;
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#procesor-ime,
+#graficka-ime,
+#memorija-ime,
+#napajanje-ime,
+#kuciste-ime,
+#maticna-ime {
+  height: 70px;
+  width: 330px;
+  position: relative;
+}
+#graficka-1,
+#graficka-2,
+#graficka-3,
+#graficka-4,
+#graficka-5,
+#memorija-1,
+#memorija-2,
+#memorija-3,
+#memorija-4,
+#memorija-5,
+#napajanje-1,
+#napajanje-2,
+#napajanje-3,
+#napajanje-4,
+#napajanje-5,
+#kuciste-1,
+#kuciste-2,
+#kuciste-3,
+#kuciste-4,
+#kuciste-5,
+#maticna-1,
+#maticna-2,
+#maticna-3,
+#maticna-4,
+#maticna-5,
+#intelcpu,
+#amdcpu {
+  height: 70px;
+  width: 330px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 70px;
+  font-size: 16px;
+  color: #baff39;
+  font-weight: bold;
+  display: none;
+}
+#cetvrtislajd {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#opis-kompa {
+  width: 500px;
+  height: 400px;
+  position: relative;
+}
+#opis-1,
+#opis-2,
+#opis-3,
+#opis-4,
+#opis-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 400px;
+  font-size: 25px;
+  color: #baff39;
+  display: none;
+}
+fieldset {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-color: #baff39;
+}
+legend {
+  text-align: center;
+  color: #baff39;
+  font-size: 35px;
+}
+input {
+  text-align: center;
+  width: 400px;
+  height: 50px;
+  background-color: #baff39;
+  color: #6e6e6e;
+  border: none;
+  font: inherit;
+  font-size: 25px;
+  font-weight: bold;
+}
+::placeholder {
+  color: #6e6e6e;
+}
+.srediti {
+  text-decoration: none;
+  color: #baff39;
+}
